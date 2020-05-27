@@ -1,4 +1,4 @@
-package api;
+package modelo;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ApiBorrarComic
+ * Servlet implementation class volver
  */
-@WebServlet("/ApiBorrarComic")
-public class ApiBorrarComic extends HttpServlet {
+@WebServlet("/volver")
+public class volver extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ApiBorrarComic() {
+    public volver() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class ApiBorrarComic extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		request.getRequestDispatcher("index.html").forward(request, response);
 	}
 
 	/**

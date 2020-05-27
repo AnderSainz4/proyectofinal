@@ -1,4 +1,4 @@
-package api;
+package modelo;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -6,20 +6,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import modelo.bean.comics;
 
 /**
- * Servlet implementation class ApiComics
+ * Servlet implementation class UpdateComic
  */
-@WebServlet("/ApiComics")
-public class ApiComics extends HttpServlet {
+@WebServlet("/UpdateComic")
+public class UpdateComic extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ApiComics() {
+    public UpdateComic() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,9 +27,7 @@ public class ApiComics extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		comics mcomics = new comics();
-		ArrayList<comics> comic = comic
-		
+		request.getRequestDispatcher("UpdateComic.jsp").forward(request, response);
 	}
 
 	/**

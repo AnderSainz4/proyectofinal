@@ -5,7 +5,7 @@ private int id;
 private String nombre;
 public generos() {
 	super();
-	// TODO Auto-generated constructor stub
+	// Aqui definimos los atriburos del genero
 }
 public int getId() {
 	return id;

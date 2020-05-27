@@ -10,7 +10,7 @@ import modelo.bean.comics;
 public class ModeloComic extends Conector {
 	
 	public ArrayList<comics> getAll(){
-			ArrayList<comics> comics = new ArrayList<comics>();
+			ArrayList<comics> comics = new ArrayList<comics>();//Aqui hemos creado el array para poder guardar la informacion
 			
 			try {
 				PreparedStatement pst = super.conexion.prepareStatement("select * from comics inner join generos on generos.id=comics.genero_id");

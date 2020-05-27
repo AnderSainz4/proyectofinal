@@ -1,6 +1,7 @@
 package modelo.bean;
 import java.util.Date;
 public class comics {
+//Aqui definimos los atrivutos del comic
 private int id;
 private String nombre;
 private String titulo;
